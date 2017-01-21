@@ -20,10 +20,9 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
-	public static void main() {
+	public static void test() throws SQLException {
 	     
 		
-    	try{
     
     
      	
@@ -43,9 +42,7 @@ public class AppTest
 		catalogOf.enumeration().save(enumeration);
 		
 		catalogOf.saveAndClose();
-    	}catch(SQLException e){
-    		
-    		e.printStackTrace();
-    	}
+   
+    	
     	
     	}}
